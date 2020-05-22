@@ -1,6 +1,9 @@
 from django.shortcuts import render
-
-# Create your views here.
+from django.http import Http404
+from .models import ImagePost, ImageCategory, ImageLocation
+import datetime
+from django.utils import timezone
+# import datetimeCreate your views here.
 def landing(request):
     posts = ImagePost.objects.all()
     post_list = []
