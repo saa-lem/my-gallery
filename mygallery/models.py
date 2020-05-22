@@ -54,3 +54,8 @@ class ImagePost(models.Model):
 def search_image(cls, search_term):
     images = cls.objects.filter(image_category__name=search_term)
     return images
+
+@classmethod
+def search_by_location(cls, search_term):
+     images = cls.objects.filter(image_location__name=search_term)
+     return images 
