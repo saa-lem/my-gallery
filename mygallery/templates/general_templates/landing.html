@@ -1,0 +1,29 @@
+
+{% extends 'general_templates/base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="container all">
+    <div class="row">
+        {% for post in post_list %}
+
+        <div class="col-md-6">
+            <div class="d-inline-flex">
+                <h2 class="text-center">{{post.image_name}}</h2>
+                <img src="../../{{post.my_image.url}}" class="">
+
+                
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                        <p>{{post.image_description |slice:":20"}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %} 
+    </div>
+</div>
+
+{% endblock %}
