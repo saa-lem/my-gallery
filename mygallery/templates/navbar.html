@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <nav class="navbar navbar-inverse">
+       <div class="container-fluid nv">
+           <div class="navbar-header">
+               <a class = "navbar-brand" href = "{% url 'landing' %}">My Gallery</a>
+               <a class = "navbar-brand" href = "{% url 'home' %}">Home</a>
+               <a class = "navbar-brand" href = "{% url 'aboretum' %}">Aboretum </a>
+               <a class = "navbar-brand" href = "{% url 'nature' %}">Nature </a>
+               <a class = "navbar-brand" href = "{% url 'park' %}">National Park </a>
+               <a class = "navbar-brand" href = "{% url 'beach' %}">Beach </a>
+               <a class = "navbar-brand" href = "{% url 'cgi' %}">CGI </a>
+
+            
+           </div>
+
+           <div class= "col-sm-4 col-md-4 navbar-right">
+               <form class = "navbar-form" role="search" action = "{% url 'search_results' %}">
+                   <div class="input-group">
+                       <input type = "text" class="form-control" placeholder = "Search Image by category" name = "image">
+                       <div class = "input-group-btn">
+                           <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                       </div>
+                   </div>
+               </form>
+           </div>
+
+       </div>
+   </nav> 
+</body>
+</html>
