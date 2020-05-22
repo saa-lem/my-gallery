@@ -11,6 +11,14 @@ class ImageCategory(models.Model):
     def save_imagecategory(self):
         self.save()
 
+class ImageLocation(models.Model):
+    name = models.CharField(max_length=60)
+
+    def __str__(self):
+        return self.name
+
+    def save_imagelocation(self):
+        self.save()
 
 
 class ImagePost(models.Model):
