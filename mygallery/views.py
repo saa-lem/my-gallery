@@ -46,7 +46,7 @@ def search_results(request):
 
         return render(request,'general_templates/search.html',{"message":message})
 
-     def aboretum_images(request):
+def aboretum_images(request):
     images=ImagePost.objects.filter(image_location__name="Aboretum")
 
     context = {
