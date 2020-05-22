@@ -21,3 +21,7 @@ class TestImagePost(TestCase):
                                image_location=self.new_location,image_category=self.new_category)
         self.new_image.save_imagepost()
         self.assertTrue(isinstance(self.new_image, ImagePost))
+
+    def test_save_imagepost(self):
+        images = ImagePost.objects.all()
+        self.assertTrue(len(images)>0)
