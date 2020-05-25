@@ -35,7 +35,7 @@ def search_results(request):
 
         context = {
             "message":message,
-            "posts":searched_imageposts
+            "posts":searched_imageposts,
         }
 
         return render(request, 'general_templates/search.html', context)
@@ -46,8 +46,8 @@ def search_results(request):
 
         return render(request,'general_templates/search.html',{"message":message})
 
-def aboretum_images(request):
-    images=ImagePost.objects.filter(image_location__name="Aboretum")
+def places_images(request):
+    images=ImagePost.objects.filter(image_location__name="Places")
 
     context = {
         "posts":images
@@ -55,17 +55,17 @@ def aboretum_images(request):
     return render(request, 'general_templates/display.html', context)
 
 def nature_images(request):
-    images=ImagePost.objects.filter(image_location__name="Nature")
-
+    posts = ImagePost.objects.filter(image_location__name="Nature")
     context = {
-        "posts":images
-    }
+        "posts":posts
+    } 
+
     return render(request, 'general_templates/display.html', context)
 
 
 
 def park_images(request):
-    images=ImagePost.objects.filter(image_location__name="National Park")
+    images=ImagePost.objects.filter(image_location__name="Animals")
 
     context = {
         "posts":images
@@ -73,21 +73,12 @@ def park_images(request):
     return render(request, 'general_templates/display.html', context)
 
 def beach_images(request):
-    images=ImagePost.objects.filter(image_location__name="beach")
+    images=ImagePost.objects.filter(image_location__name="Beach")
 
     context = {
         "posts":images
     }
     return render(request, 'general_templates/display.html', context)
-
-def cgi_images(request):
-    images=ImagePost.objects.filter(image_location__name="CGI")
-
-    context = {
-        "posts":images
-    }
-    return render(request, 'general_templates/display.html', context)
-
 
 def unknown_images(request):
     images=ImagePost.objects.filter(image_location__name="Unknown")
