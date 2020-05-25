@@ -1,0 +1,49 @@
+{% extends 'general_templates/base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="container all">
+    <div class="row">
+        {% for post in posts %}
+
+        <div class="col-md-4">
+            <div class="d-inline-flex  ">
+                <h2 class="text-center text-white">{{post.image_name}}</h2>
+                <img src="{{post.my_image.url}}" class="img-responsive imgs" id='imag'
+                    alt=" Name: {{post.image_name}} <br>Category: {{post.image_category}}<br>Locaton:{{post.image_location}} <br> About:{{post.image_description}}">
+
+                <p class="text-white image-descrips" id="image-descrip">{{post.image_description |slice:":50"}}...</p>
+        </div>
+        <!-- modal -->
+            <div class="modal" id="myModal">
+                <!-- close button -->
+                <span class="close">&times;</span>
+
+                <div class="meta">
+                    <div class="fix">
+                        <!-- modal content ie the image -->
+                        <img class="modal-content" id="img1">
+                    </div>
+
+                    <div class="overlay">
+
+                        <!-- modal caption ie image description -->
+
+                        <div id="caption"></div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
