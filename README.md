@@ -53,11 +53,14 @@ Run the following commands:
 Run this command in the terminal: pip freeze > requirements.txt
 
 # Deployment
-For deployment find follow this documentation
+For deployment find follow this documentation: 
  # Connecting to the server
 In the same terminal type: python3 manage.py runserver
 Open the browser on http://localhost:8000/
 
+ # Server Display
+ You should be able to see something like this in the server:
+![The server Output](static/img/screen.png) 
 # Known bugs
 None so far but I'll be glad to be communicated to if there is one
 
