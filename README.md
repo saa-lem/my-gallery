@@ -23,7 +23,7 @@ eg. name, description and the location shot
 |Search |	Search image by category |	Takes you to the page where the images by category are located
 
  # Live link
-
+https://salemgallery.herokuapp.com/
 
 ## Set-up and Installation
 
