@@ -41,9 +41,9 @@ Run the following command on the terminal:
 1. sudo apt-get update
 2. sudo apt-get install postgresql postgresql-contrib libpq-dev
 3. sudo -u postgres createdb $USER
-4.  *N/B: Replace ($USER) with a your username*
-5. pql 
-     *to connect to your database*
+4.  **N/B: Replace ($USER) with a your username**
+5. pqls 
+     **to connect to your database**
 # Create a Virtual Environment
 Run the following commands:
 1. python3.6 -m venv --without-pip virtual
