@@ -59,11 +59,11 @@ Run the following commands:
 Run this command in the terminal: 
 - pip freeze > requirements.txt
 # Deployment
-For deployment find follow this documentation: https://gist.github.com/newtonkiragu/42f2500e56d9c2375a087233587eddd0
+For deployment  follow this documentation: https://gist.github.com/newtonkiragu/42f2500e56d9c2375a087233587eddd0
  # Connecting to the server
 In the same terminal type: 
 - python3 manage.py runserver
-Open the browser on http://localhost:8000/
+- Open the browser on http://localhost:8000/
 
  # Server Display
  You should be able to see something like this in the server:
