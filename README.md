@@ -52,6 +52,8 @@ Run the following commands:
 # Initiating the dependencies
 Run this command in the terminal: pip freeze > requirements.txt
 
+# Deployment
+For deployment find follow this documentation
  # Connecting to the server
 In the same terminal type: python3 manage.py runserver
 Open the browser on http://localhost:8000/
