@@ -42,7 +42,7 @@ Run the following command on the terminal:
 2. sudo apt-get install postgresql postgresql-contrib libpq-dev
 3. sudo -u postgres createdb $USER
 4.  **N/B: Replace ($USER) with a your username**
-5. pqls 
+5. psql
      **to connect to your database**
 # Create a Virtual Environment
 Run the following commands:
