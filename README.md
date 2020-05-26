@@ -60,7 +60,7 @@ Open the browser on http://localhost:8000/
 
  # Server Display
  You should be able to see something like this in the server:
-![The server Output](static/img/screen.png) 
+![The server Output](mygallery/static/img/screen.png) 
 # Known bugs
 None so far but I'll be glad to be communicated to if there is one
 
